@@ -70,5 +70,12 @@ namespace Session04_AssignmentOOP
                 ship.PrintShipment();
             }
         }
+        public void PrintTracingStatuses()
+        {
+            foreach (ITrackable t in shipment)
+            {
+                t.GetTrackingStatus();
+            }
+        }
     }
 }
