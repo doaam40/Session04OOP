@@ -10,7 +10,7 @@ namespace Session04_AssignmentOOP
         {
 
         }
-        public override decimal EstimatedCost => base.EstimatedCost;
+        public override decimal EstimatedCost => DeliveryFee + (decimal)(Weight * 5);
         public override void PrintShipment()
         {
             Console.WriteLine($"Standard Shipment: Tracking Code: {TrackingCode}, Description: {Description}, Weight: {Weight} KG, Delivery Fee: {DeliveryFee} EGP, Estimated Cost: {EstimatedCost} EGP");
