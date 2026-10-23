@@ -27,13 +27,10 @@ namespace Session04_AssignmentOOP
 
         public decimal CalculateInsurance()
         {
-            throw new NotImplementedException();
+            return 8m / 100m * (EstimatedCost);
         }
 
-        public string GetTrackingStatus()
-        {
-            throw new NotImplementedException();
-        }
+        public string GetTrackingStatus() => "Out for Delivery";
 
         public override void PrintShipment()
         {

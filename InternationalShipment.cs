@@ -42,7 +42,7 @@ namespace Session04_AssignmentOOP
 
         public decimal CalculateInsurance()
         {
-            throw new NotImplementedException();
+            return 12m / 100m * (EstimatedCost);
         }
 
         public virtual void GenerateCustomsReport()
@@ -50,10 +50,7 @@ namespace Session04_AssignmentOOP
 
         }
 
-        public string GetTrackingStatus()
-        {
-            throw new NotImplementedException();
-        }
+        public string GetTrackingStatus() => "Has been Delivered";
 
         public override void PrintShipment()
         {

@@ -14,13 +14,11 @@ namespace Session04_AssignmentOOP
 
         public decimal CalculateInsurance()
         {
-            throw new NotImplementedException();
+            return 5m / 100m * EstimatedCost;
         }
 
-        public string GetTrackingStatus()
-        {
-            throw new NotImplementedException();
-        }
+        public string GetTrackingStatus() => "Ready";
+        
 
         public override void PrintShipment()
         {

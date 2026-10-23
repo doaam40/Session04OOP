@@ -67,7 +67,8 @@ namespace Session04_AssignmentOOP
         {
             foreach (Shipment ship in shipment)
             {
-                ship.PrintShipment();
+                if(ship != null)
+                    ship.PrintShipment();
             }
         }
         public void PrintTracingStatuses()

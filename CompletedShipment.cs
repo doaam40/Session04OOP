@@ -10,5 +10,12 @@ namespace Session04_AssignmentOOP
         {
 
         }
+
+        public override decimal EstimatedCost => throw new NotImplementedException();
+
+        public override void PrintShipment()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
