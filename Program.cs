@@ -21,6 +21,13 @@
             // c) c# does not support multiable inheritane, but support multiable implementation
             #endregion
             #endregion
+
+            #region Part 02 — Practical
+            #region Q1
+
+
+            #endregion
+            #endregion
         }
     }
 }
