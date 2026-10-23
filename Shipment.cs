@@ -60,7 +60,7 @@ namespace Session04_AssignmentOOP
                     deliveryFee = value;
             }
         }
-        public virtual decimal EstimatedCost => DeliveryFee + (decimal)(Weight * 5);
+        public abstract decimal EstimatedCost { get; }
 
 
         public Shipment(string _trackingCode)
@@ -84,10 +84,7 @@ namespace Session04_AssignmentOOP
             if (newFee > 0)
                 DeliveryFee = newFee;
         }
-        public virtual void PrintShipment()
-        {
-            Console.WriteLine($"Shipment information: tracking code is {TrackingCode}, description: {Description}, weight: {Weight}, delivery fee: {DeliveryFee}, and estimatedCost: {EstimatedCost}");
-        }
+        public abstract void PrintShipment();
         public override string ToString()
         {
             return $"Tracking Code: {TrackingCode}, Description: {Description}, Weight: {Weight} KG, Delivery Fee: {DeliveryFee} EGP, Destination: {Destination.BuildingNumber} {Destination.Street} Street, {Destination.City}, Estimated Cost: {EstimatedCost} EGP";
