@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Session04_AssignmentOOP
 {
-    internal class ExpressShipment : Shipment, ITrackable
+    internal class ExpressShipment : Shipment, ITrackable, IInsurable
     {
         private decimal extraFee;
         public ExpressShipment(string _trackingCode, string _description, double _weight, decimal _deliveryFee, DeliveryAddress _destination, decimal _extraFee) : base(_trackingCode, _description, _weight, _deliveryFee, _destination)
@@ -24,6 +24,11 @@ namespace Session04_AssignmentOOP
             }
         }
         public override decimal EstimatedCost => DeliveryFee + (decimal)(Weight * 5) + ExtraFee;
+
+        public decimal CalculateInsurance()
+        {
+            throw new NotImplementedException();
+        }
 
         public string GetTrackingStatus()
         {

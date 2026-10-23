@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Session04_AssignmentOOP
 {
-    internal class InternationalShipment : Shipment, ITrackable
+    internal class InternationalShipment : Shipment, ITrackable, IInsurable
     {
         private string destinationCountry;
         private decimal customsFee;
@@ -39,6 +39,12 @@ namespace Session04_AssignmentOOP
             }
         }
         public override decimal EstimatedCost => DeliveryFee + (decimal)(Weight * 5) + CustomsFee;
+
+        public decimal CalculateInsurance()
+        {
+            throw new NotImplementedException();
+        }
+
         public virtual void GenerateCustomsReport()
         {
 
