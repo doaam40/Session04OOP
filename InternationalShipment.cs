@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Session04_AssignmentOOP
 {
-    internal class InternationalShipment : Shipment
+    internal class InternationalShipment : Shipment, ITrackable
     {
         private string destinationCountry;
         private decimal customsFee;
@@ -43,6 +43,12 @@ namespace Session04_AssignmentOOP
         {
 
         }
+
+        public string GetTrackingStatus()
+        {
+            throw new NotImplementedException();
+        }
+
         public override void PrintShipment()
         {
             Console.WriteLine($"International Shipment: Tracking Code: {TrackingCode}, Description: {Description}, Weight: {Weight} KG, Delivery Fee: {DeliveryFee} EGP, Destination Country: {DestinationCountry}, Customs Fee: {customsFee}, Estimated Cost: {EstimatedCost} EGP");
